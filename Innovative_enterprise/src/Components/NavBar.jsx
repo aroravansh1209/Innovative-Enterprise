@@ -50,7 +50,7 @@ export default function NavBar() {
           </Link>
 
           <Link
-            to="/contact"
+            to="/contact-us"
             className={`text-white font-medium relative pb-1 hover:text-red-600 transition-colors duration-300 
               ${currentPath === "/contact" ? "after:w-full" : "after:w-0"}
               after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-red-600 after:transition-all after:duration-300`}
@@ -119,7 +119,7 @@ export default function NavBar() {
           </Link>
 
           <Link
-            to="/contact"
+            to="/contact-us"
             onClick={() => setMobileMenuOpen(false)}
             className={`text-white text-lg font-medium hover:text-red-600 ${
               currentPath === "/contact" ? "underline underline-offset-4 text-red-600" : ""
@@ -129,7 +129,7 @@ export default function NavBar() {
           </Link>
 
           <Link
-            to="/contact"
+            to="/contact-us"
             onClick={() => setMobileMenuOpen(false)}
             className="px-6 py-3 bg-red-600 text-white text-center font-semibold rounded hover:bg-red-700"
           >
