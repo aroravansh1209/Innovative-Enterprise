@@ -1,4 +1,4 @@
-import Hero from "../assets/Hero.jpeg"
+import Hero from "../assets/Hero.jpeg";
 import { useState } from "react"
 
 export default function AboutHero() {
@@ -11,7 +11,7 @@ export default function AboutHero() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: "url(/header-bg.jpg)" }}
+          style={{ backgroundImage: `url(${Hero})` }}
         ></div>
         {/* Dark overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/0"></div>
@@ -28,24 +28,22 @@ export default function AboutHero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full py-20">
         <div className="max-w-2xl">
           {/* Badge */}
-          <div className="mb-6 inline-block">
+          {/* <div className="mb-6 inline-block">
             <span className="inline-block px-4 py-2 bg-red-600/20 text-red-600 font-semibold text-sm rounded-full border border-red-600/30">
               Enterprise IT Solutions
             </span>
-          </div>
+          </div> */}
 
           {/* Heading */}
-          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">Your Complete IT Partner</h1>
+          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">About Innovative Enterprise</h1>
 
           {/* Description */}
           <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl">
-            From cutting-edge hardware to enterprise security, Innovative Enterprise delivers comprehensive IT solutions
-            designed to drive your business forward. Trust us for laptops, desktops, networking, cybersecurity, and
-            more.
+            Your trusted partner in comprehensive IT solutions and computer sales services.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4">
+          {/* <div className="flex flex-wrap gap-4">
             <a
               href="/contact"
               className="px-8 py-2.5 bg-red-600 text-white font-semibold rounded-full text-sm hover:bg-red-700 transition-colors duration-300"
@@ -58,7 +56,7 @@ export default function AboutHero() {
             >
               Learn More
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

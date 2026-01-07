@@ -31,11 +31,11 @@ export default function HomeHero() {
         <div className="max-w-2xl">
 
           {/* Badge */}
-          <div className="mb-6 inline-block">
+          {/* <div className="mb-6 inline-block">
             <span className="inline-block px-4 py-2 bg-red-600/20 text-red-600 font-semibold text-sm rounded-full border border-red-600/30">
               Enterprise IT Solutions
             </span>
-          </div>
+          </div> */}
 
           {/* Heading */}
           <h1 className="text-5xl font-bold text-white mb-6 leading-tight">Your Complete IT Partner</h1>
@@ -47,7 +47,7 @@ export default function HomeHero() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4">
+          {/* <div className="flex flex-wrap gap-4">
             <a
               href="/contact"
               className="px-8 py-2.5 bg-red-600 text-white font-semibold rounded-full text-sm hover:bg-red-700 transition-colors duration-300"
@@ -60,7 +60,7 @@ export default function HomeHero() {
             >
               Learn More
             </a>
-          </div>
+          </div> */}
 
         </div>
       </div>

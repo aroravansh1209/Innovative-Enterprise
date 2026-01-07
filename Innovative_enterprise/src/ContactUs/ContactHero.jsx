@@ -30,23 +30,22 @@ export default function ContactHero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full py-20">
         <div className="max-w-2xl">
 
-          {/* Badge */}
+          {/* Badge
           <div className="mb-6 inline-block">
             <span className="inline-block px-4 py-2 bg-red-600/20 text-red-600 font-semibold text-sm rounded-full border border-red-600/30">
               Enterprise IT Solutions
             </span>
-          </div>
+          </div> */}
 
           {/* Heading */}
-          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">Your Complete IT Partner</h1>
+          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">Get In Touch</h1>
 
           {/* Description */}
           <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl">
-            From cutting-edge hardware to enterprise security, Innovative Enterprise delivers comprehensive IT solutions
-            designed to drive your business forward.
+            Have questions or need assistance? We're here to help. Contact us today.
           </p>
 
-          {/* Buttons */}
+          {/* Buttons
           <div className="flex flex-wrap gap-4">
             <a
               href="/contact"
@@ -60,7 +59,7 @@ export default function ContactHero() {
             >
               Learn More
             </a>
-          </div>
+          </div> */}
 
         </div>
       </div>

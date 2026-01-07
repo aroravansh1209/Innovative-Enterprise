@@ -71,9 +71,9 @@ export default function ContactUs() {
                 <div className="text-red-600 text-3xl mb-4">📞</div>
                 <h3 className="text-xl font-bold mb-2">Phone</h3>
                 <p className="text-gray-600">
-                  +91-XXXX-XXXX-XX
+                  +91-9725028173
                   <br />
-                  Available 9 AM – 6 PM IST
+                  Available 10 AM – 7 PM IST
                 </p>
               </div>
 
@@ -81,9 +81,7 @@ export default function ContactUs() {
                 <div className="text-red-600 text-3xl mb-4">📧</div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <p className="text-gray-600">
-                  info@innovativeenterprise.com
-                  <br />
-                  support@innovativeenterprise.com
+                  info@innovativeenterprise.co.in
                 </p>
               </div>
             </div>
