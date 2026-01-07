@@ -52,7 +52,7 @@ export default function NavBar() {
           <Link
             to="/contact-us"
             className={`text-white font-medium relative pb-1 hover:text-red-600 transition-colors duration-300 
-              ${currentPath === "/contact" ? "after:w-full" : "after:w-0"}
+              ${currentPath === "/contact-us" ? "after:w-full" : "after:w-0"}
               after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-red-600 after:transition-all after:duration-300`}
           >
             Contact
