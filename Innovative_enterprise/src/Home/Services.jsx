@@ -40,37 +40,107 @@ export default function BusinessServices() {
   const services = [
     {
       id: 1,
-      title: "Affordable Web Development Services",
+      title: "Laptop and Desktop Supplier",
       category: "DEVELOPMENT",
-      description: "Professional affordable web development services with responsive web design, custom websites, and web applications tailored to your business needs.",
+      description: "Wide range of laptops and desktop computers for personal and business use.",
       image: webdev,
     },
     {
       id: 2,
-      title: "UI/UX Design Services",
+      title: "Security Services",
       category: "DESIGN",
-      description: "Expert UI/UX design services crafting intuitive user interfaces and seamless user experiences for websites and mobile applications.",
+      description: "Comprehensive security solutions for your computing infrastructure.",
       image: UX,
     },
     {
       id: 3,
-      title: "SEO Services",
+      title: "Corporate Telecome",
       category: "MARKETING",
-      description: "Comprehensive SEO services to optimize your website and rank higher in search engine results, driving organic traffic to your business.",
+      description: "Professional telecom solutions tailored for enterprises.",
       image: seo,
     },
     {
       id: 4,
-      title: "Social Media Marketing Agency",
+      title: "Gaming Setup",
       category: "MARKETING",
-      description: "Professional social media marketing agency managing your social media presence to engage with your audience and grow your brand.",
+      description: "High-performance gaming systems and custom custom builds.",
       image: smm,
     },
     {
       id: 5,
-      title: "Mobile App Development India",
+      title: "Printer Solutions",
       category: "DEVELOPMENT",
-      description: "Expert mobile app development in India, building custom mobile applications for iOS and Android platforms with modern technologies.",
+      description: "All types of printers and printing solutions for your needs.",
+      image: appdev,
+    },
+    {
+      id: 6,
+      title: "Software Licenses",
+      category: "DEVELOPMENT",
+      description: "Legitmate software licenses and licensing support.",
+      image: appdev,
+    },
+    {
+      id: 7,
+      title: "Refurbished Systems",
+      category: "DEVELOPMENT",
+      description: "Quality refurbished laptops and system at affordable prices.",
+      image: appdev,
+    },
+    {
+      id: 8,
+      title: "UPS and Stabilizers",
+      category: "DEVELOPMENT",
+      description: "Power backup and voltage stabilization solutions.",
+      image: appdev,
+    },
+    {
+      id: 9,
+      title: "Network Solutions",
+      category: "DEVELOPMENT",
+      description: "Complete networking infrastructure and solutions.",
+      image: appdev,
+    },
+    {
+      id: 10,
+      title: "Antivirus Solutions",
+      category: "DEVELOPMENT",
+      description: "Advanced antivirus and cybersecurity protection.",
+      image: appdev,
+    },
+    {
+      id: 11,
+      title: "Computer Preipherals",
+      category: "DEVELOPMENT",
+      description: "Keybords, mice, monitors and other PC peripherals.",
+      image: appdev,
+    },
+    {
+      id: 12,
+      title: "Internet Leased Lines",
+      category: "DEVELOPMENT",
+      description: "Dedicated high-speed internet connectivity solutions.",
+      image: appdev,
+    },
+    {
+      id: 13,
+      title: "Multi-Screen Setup",
+      category: "DEVELOPMENT",
+      description: "Professional multi-display workstation configuration.",
+      image: appdev,
+    },
+    {
+      id: 14,
+      title: "CCTV Surveillance",
+      category: "DEVELOPMENT",
+      description: "Complete CCTV survelliance systems and monitoring.",
+      image: appdev,
+    },
+    {
+      id: 15,
+      title: "Cybersecurity",
+      category: "DEVELOPMENT",
+      description: "Enterprise-grade cybersecurity and threat protection.",
       image: appdev,
     },
   ]
@@ -86,26 +156,17 @@ export default function BusinessServices() {
   return (
     <section
       ref={sectionRef}
-      className={`w-full bg-gray-50 py-16 px-4 md:px-8 lg:px-16 transition-all duration-1000 transform ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-      }`}
+      className={`w-full bg-gray-50 py-16 px-4 md:px-8 lg:px-16 transition-all duration-1000 transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+        }`}
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
           <h2
-            className={`text-4xl md:text-5xl font-bold text-[#2d2b4a] max-w-md mb-6 md:mb-0 transition-all duration-800 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
-            }`}
+            className={`text-4xl md:text-5xl font-bold text-[#2d2b4a] max-w-md mb-6 md:mb-0 transition-all duration-800 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+              }`}
           >
-            Professional Development Services & Digital Marketing Solutions
+            OUR SERVICES
           </h2>
-          <p
-            className={`text-gray-600 max-w-md transition-all duration-800 delay-200 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
-            }`}
-          >
-            Leading digital marketing agency in India offering affordable web development services, UI/UX design services, SEO services, and responsive web design solutions for businesses of all sizes.
-          </p>
 
         </div>
 
@@ -113,17 +174,13 @@ export default function BusinessServices() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-3 group cursor-pointer ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-3 group cursor-pointer ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
               style={{
                 transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
               }}
             >
               <div className="relative h-48 overflow-hidden">
-                <div className="absolute top-4 right-4 bg-[#2d2b4a] text-white text-xs font-medium py-1 px-3 rounded-full z-10 transition-all duration-300 group-hover:scale-105 group-hover:bg-[#1a1830]">
-                  {service.category}
-                </div>
                 <img
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
@@ -139,12 +196,6 @@ export default function BusinessServices() {
                   {service.description}
                 </p>
                 <div className="relative inline-block">
-                  <a
-                    href="/services"
-                    className="text-xs font-semibold tracking-wider text-[#2d2b4a] transition-all duration-300 hover:text-[#1a1830] hover:pl-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#2d2b4a] after:transition-all after:duration-300 hover:after:w-full"
-                  >
-                    EXPLORE SERVICES →
-                  </a>
                 </div>
               </div>
             </div>
