@@ -1,11 +1,13 @@
+import CreativeApproach from "./CreativeApproach";
 import HomeHero from "./HomeHero";
-import Services from "./Services";
+import BusinessServices from "./Services";
 
 export default function Home() {
   return (
     <div>
         <HomeHero />
-        <Services />
+        <CreativeApproach />
+        <BusinessServices />
     </div>
   );
 }

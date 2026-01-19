@@ -39,39 +39,18 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-gray-300 hover:text-red-600 transition-colors duration-300">
+                <a href="/about-us" className="text-gray-300 hover:text-red-600 transition-colors duration-300">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-300 hover:text-red-600 transition-colors duration-300">
+                <a href="/contact-us" className="text-gray-300 hover:text-red-600 transition-colors duration-300">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Services</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a href="#services" className="text-gray-300 hover:text-red-600 transition-colors duration-300">
-                  Hardware Solutions
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-300 hover:text-red-600 transition-colors duration-300">
-                  Cybersecurity
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-300 hover:text-red-600 transition-colors duration-300">
-                  Network Solutions
-                </a>
-              </li>
-            </ul>
-          </div>
 
           {/* Contact */}
           <div>
