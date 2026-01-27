@@ -10,7 +10,6 @@ export default function ContactUs() {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitMessage, setSubmitMessage] = useState("")
 
   const inputClass =
     "w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
@@ -23,36 +22,46 @@ export default function ContactUs() {
     }))
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    setSubmitMessage("")
 
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      setSubmitMessage(
-        "Thank you! Your message has been sent successfully. We will contact you soon."
-      )
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      })
+    const whatsappNumber = "919725028173" // your WhatsApp number
 
-      setTimeout(() => setSubmitMessage(""), 5000)
-    } catch (error) {
-      setSubmitMessage("Error sending message. Please try again.")
-    } finally {
-      setIsSubmitting(false)
-    }
+    const message = `
+New Contact Form Message 🚀
+
+👤 Name: ${formData.name}
+📧 Email: ${formData.email}
+📞 Phone: ${formData.phone}
+📌 Subject: ${formData.subject}
+
+📝 Message:
+${formData.message}
+    `
+
+    const encodedMessage = encodeURIComponent(message)
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+
+    // Open WhatsApp
+    window.open(whatsappURL, "_blank")
+
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    })
+
+    setIsSubmitting(false)
   }
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <main className="flex-1 pt-20">
-        {/* Contact Section */}
         <section className="py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-6">
             {/* Info Cards */}
@@ -86,9 +95,8 @@ export default function ContactUs() {
               </div>
             </div>
 
-            {/* Form Container - SAME WIDTH AS CARDS */}
+            {/* Form */}
             <div className="max-w-7xl mx-auto bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-200">
-              {/* Inner Wrapper for Comfortable Input Width */}
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl font-bold mb-8 text-center">
                   Send us a Message
@@ -145,24 +153,12 @@ export default function ContactUs() {
                     className={`${inputClass} resize-none`}
                   />
 
-                  {submitMessage && (
-                    <div
-                      className={`p-4 rounded-lg text-sm font-medium ${
-                        submitMessage.includes("Error")
-                          ? "bg-red-100 text-red-700"
-                          : "bg-green-100 text-green-700"
-                      }`}
-                    >
-                      {submitMessage}
-                    </div>
-                  )}
-
                   <button
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 active:scale-[0.98] transition disabled:opacity-60"
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Opening WhatsApp..." : "Send Message"}
                   </button>
                 </form>
               </div>
