@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "../assets/logo.png";
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,18 +20,21 @@ export default function NavBar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/90 backdrop-blur-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        ${
+          isScrolled
+            ? "md:bg-black/90 md:backdrop-blur-md bg-transparent"
+            : "bg-transparent"
+        }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="relative max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="h-10 flex-shrink-0">
-          <img src="/logo.jpg" alt="Logo" className="h-full w-auto" />
+        <Link to="/" className="h-10 flex-shrink-0 z-10">
+          <img src={Logo} alt="Logo" className="h-full w-auto" />
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-10">
+        {/* Desktop Navigation (Centered) */}
+        <nav className="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
           <Link
             to="/"
             className={`text-white font-medium relative pb-1 hover:text-red-600 transition-colors duration-300 
@@ -62,20 +66,22 @@ export default function NavBar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(true)}
-          className="md:hidden text-white"
+          className="md:hidden text-white z-10"
         >
-          <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>  
+          <svg
+            className="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
         </button>
-
-        {/* Desktop CTA Button */}
-        <Link
-          to="/contact"
-          className="hidden md:block px-8 py-3 bg-red-600 text-white font-semibold rounded hover:bg-red-700 transition-colors"
-        >
-          Contact Us
-        </Link>
       </div>
 
       {/* Mobile Overlay */}
@@ -92,7 +98,10 @@ export default function NavBar() {
         ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         {/* Close Button */}
-        <button onClick={() => setMobileMenuOpen(false)} className="text-white mb-6">
+        <button
+          onClick={() => setMobileMenuOpen(false)}
+          className="text-white mb-6"
+        >
           ✕
         </button>
 
@@ -112,7 +121,9 @@ export default function NavBar() {
             to="/about-us"
             onClick={() => setMobileMenuOpen(false)}
             className={`text-white text-lg font-medium hover:text-red-600 ${
-              currentPath === "/about-us" ? "underline underline-offset-4 text-red-600" : ""
+              currentPath === "/about-us"
+                ? "underline underline-offset-4 text-red-600"
+                : ""
             }`}
           >
             About us
@@ -122,18 +133,12 @@ export default function NavBar() {
             to="/contact-us"
             onClick={() => setMobileMenuOpen(false)}
             className={`text-white text-lg font-medium hover:text-red-600 ${
-              currentPath === "/contact" ? "underline underline-offset-4 text-red-600" : ""
+              currentPath === "/contact-us"
+                ? "underline underline-offset-4 text-red-600"
+                : ""
             }`}
           >
             Contact
-          </Link>
-
-          <Link
-            to="/contact-us"
-            onClick={() => setMobileMenuOpen(false)}
-            className="px-6 py-3 bg-red-600 text-white text-center font-semibold rounded hover:bg-red-700"
-          >
-            Contact Us
           </Link>
         </nav>
       </div>
