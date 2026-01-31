@@ -14,9 +14,9 @@ import NetworkSolutions from '../assets/NetworkSolution.png'
 import AntivirusSolutions from '../assets/AntivirusSolution.png'
 import ComputerPreipherals from '../assets/ComputerPeripherals.png'
 import InternetLeasedLines from '../assets/LeaseLine.png'
-import MultiScreenSetup from '../assets/Hero.jpeg'
-import CCTVSurveillance from '../assets/Hero.jpeg'
-import Cybersecurity from '../assets/Hero.jpeg'
+import MultiScreenSetup from '../assets/Multiscreensetup.png'
+import CCTVSurveillance from '../assets/CCTVSurveillance.png'
+import Cybersecurity from '../assets/Cybersecurity.png'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
