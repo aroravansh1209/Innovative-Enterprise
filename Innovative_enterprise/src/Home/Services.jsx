@@ -3,9 +3,9 @@
 import { useState, useEffect, useRef } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import LaptopSupplier from '../assets/Laptop&DesktopSupplier.png'
+import Security from '../assets/Securityservices.png'
 import seo from '../assets/Hero.jpeg'
 import appdev from '../assets/Hero.jpeg'
-import UX from '../assets/Hero.jpeg'
 import smm from '../assets/Hero.jpeg'
 
 export default function BusinessServices() {
@@ -50,7 +50,7 @@ export default function BusinessServices() {
       title: "Security Services",
       category: "DESIGN",
       description: "Comprehensive security solutions for your computing infrastructure.",
-      image: UX,
+      image: Security,
     },
     {
       id: 3,
