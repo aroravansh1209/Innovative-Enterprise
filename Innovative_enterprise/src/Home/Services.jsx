@@ -19,6 +19,8 @@ import CCTVSurveillance from '../assets/CCTVSurveillance.png'
 import Cybersecurity from '../assets/Cybersecurity.png'
 import WebDev from '../assets/WebDev.png'
 import AppDev from '../assets/AppDev.png'
+import SMM from '../assets/SMM.png'
+import SEO from '../assets/SEO.png'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -159,29 +161,29 @@ export default function BusinessServices() {
       id: 16,
       title: "Website Development",
       category: "DEVELOPMENT",
-      description: "Enterprise-grade cybersecurity and threat protection.",
+      description: "Crafting responsive, high-performance websites designed to elevate your brand and convert visitors into customers.",
       image: WebDev,
     },
     {
       id: 17,
       title: "App Development",
       category: "DEVELOPMENT",
-      description: "Enterprise-grade cybersecurity and threat protection.",
+      description: "Building intuitive, scalable mobile applications that deliver seamless user experiences across all devices.",
       image: AppDev,
     },
     {
       id: 18,
       title: "Social Media Management",
       category: "DEVELOPMENT",
-      description: "Enterprise-grade cybersecurity and threat protection.",
-      image: Cybersecurity,
+      description: "Strategically growing your online presence with engaging content that connects you directly to your target audience.",
+      image: SMM,
     },
     {
       id: 19,
       title: "SEO",
       category: "DEVELOPMENT",
-      description: "Enterprise-grade cybersecurity and threat protection.",
-      image: Cybersecurity,
+      description: "Optimizing your digital footprint to drive organic traffic and secure top rankings on search engine results pages.",
+      image: SEO,
     },
   ]
 
