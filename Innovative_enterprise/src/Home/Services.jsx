@@ -10,10 +10,13 @@ import Printer from '../assets/PrinterSolution.png'
 import SoftwareLicensesPic from '../assets/SoftwareLicenses.png'
 import RefurbishedSystems from '../assets/RefurbishedSystem.png'
 import UPSandStabilizers from '../assets/UPSStabilizers.png'
-import NetworkSolutions from '../assets/Hero.jpeg'
-import AntivirusSolutions from '../assets/Hero.jpeg'
+import NetworkSolutions from '../assets/NetworkSolution.png'
+import AntivirusSolutions from '../assets/AntivirusSolution.png'
 import ComputerPreipherals from '../assets/Hero.jpeg'
-import appdev from '../assets/Hero.jpeg'
+import InternetLeasedLines from '../assets/Hero.jpeg'
+import MultiScreenSetup from '../assets/Hero.jpeg'
+import CCTVSurveillance from '../assets/Hero.jpeg'
+import Cybersecurity from '../assets/Hero.jpeg'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -127,28 +130,28 @@ export default function BusinessServices() {
       title: "Internet Leased Lines",
       category: "DEVELOPMENT",
       description: "Dedicated high-speed internet connectivity solutions.",
-      image: appdev,
+      image: InternetLeasedLines,
     },
     {
       id: 13,
       title: "Multi-Screen Setup",
       category: "DEVELOPMENT",
       description: "Professional multi-display workstation configuration.",
-      image: appdev,
+      image: MultiScreenSetup,
     },
     {
       id: 14,
       title: "CCTV Surveillance",
       category: "DEVELOPMENT",
       description: "Complete CCTV survelliance systems and monitoring.",
-      image: appdev,
+      image: CCTVSurveillance,
     },
     {
       id: 15,
       title: "Cybersecurity",
       category: "DEVELOPMENT",
       description: "Enterprise-grade cybersecurity and threat protection.",
-      image: appdev,
+      image: Cybersecurity,
     },
   ]
 
