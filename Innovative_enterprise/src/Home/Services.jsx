@@ -17,6 +17,7 @@ import InternetLeasedLines from '../assets/LeaseLine.png'
 import MultiScreenSetup from '../assets/Multiscreensetup.png'
 import CCTVSurveillance from '../assets/CCTVSurveillance.png'
 import Cybersecurity from '../assets/Cybersecurity.png'
+import Webdev from '../assets/WebDev.png'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -158,7 +159,7 @@ export default function BusinessServices() {
       title: "Website Development",
       category: "DEVELOPMENT",
       description: "Enterprise-grade cybersecurity and threat protection.",
-      image: Cybersecurity,
+      image: WebDev,
     },
     {
       id: 17,
