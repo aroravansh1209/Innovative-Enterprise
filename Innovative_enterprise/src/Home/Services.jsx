@@ -18,6 +18,7 @@ import MultiScreenSetup from '../assets/Multiscreensetup.png'
 import CCTVSurveillance from '../assets/CCTVSurveillance.png'
 import Cybersecurity from '../assets/Cybersecurity.png'
 import WebDev from '../assets/WebDev.png'
+import AppDev from '../assets/AppDev.png'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -166,7 +167,7 @@ export default function BusinessServices() {
       title: "App Development",
       category: "DEVELOPMENT",
       description: "Enterprise-grade cybersecurity and threat protection.",
-      image: Cybersecurity,
+      image: AppDev,
     },
     {
       id: 18,
