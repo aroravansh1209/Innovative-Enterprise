@@ -66,7 +66,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-red-600 flex-shrink-0 mt-1" />
-                <span className="text-gray-300">Your City, Country</span>
+                <span className="text-gray-300">13, Girivar society near sargam flats ishwarbhuvan road navrangpura Ahmedabad Gujarat , India -380009</span>
               </li>
             </ul>
           </div>

@@ -70,9 +70,9 @@ ${formData.message}
                 <div className="text-red-600 text-3xl mb-4">📍</div>
                 <h3 className="text-xl font-bold mb-2">Address</h3>
                 <p className="text-gray-600">
-                  Your City, State
+                  13, Girivar society near sargam flats ishwarbhuvan road navrangpura Ahmedabad 
                   <br />
-                  Country - PIN
+                  Gujarat , India -380009
                 </p>
               </div>
 

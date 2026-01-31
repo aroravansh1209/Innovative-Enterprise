@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useRef } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
+import LaptopSupplier from '../assets/Laptop&DesktopSupplier.png'
 import seo from '../assets/Hero.jpeg'
 import appdev from '../assets/Hero.jpeg'
-import webdev from '../assets/Hero.jpeg'
 import UX from '../assets/Hero.jpeg'
 import smm from '../assets/Hero.jpeg'
 
@@ -43,7 +43,7 @@ export default function BusinessServices() {
       title: "Laptop and Desktop Supplier",
       category: "DEVELOPMENT",
       description: "Wide range of laptops and desktop computers for personal and business use.",
-      image: webdev,
+      image: LaptopSupplier,
     },
     {
       id: 2,
