@@ -5,8 +5,15 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import LaptopSupplier from '../assets/Laptop&DesktopSupplier.png'
 import Security from '../assets/Securityservices.png'
 import Corporate from '../assets/CorporateTelecom.png'
-import appdev from '../assets/Hero.jpeg'
-import smm from '../assets/Hero.jpeg'
+import Gaming from '../assets/gamingsetup.png'
+import Printer from '../assets/PrinterSolution.png'
+import SoftwareLicensesPic from '../assets/SoftwareLicenses.png'
+import RefurbishedSystems from '../assets/RefurbishedSystem.png'
+import UPSandStabilizers from '../assets/RefurbishedSystem.png'
+import SoftwareLicenses from '../assets/RefurbishedSystem.png'
+import NetworkSolutions from '../assets/RefurbishedSystem.png'
+import AntivirusSolutions from '../assets/RefurbishedSystem.png'
+import appdev from '../assets/RefurbishedSystem.png'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -64,49 +71,49 @@ export default function BusinessServices() {
       title: "Gaming Setup",
       category: "MARKETING",
       description: "High-performance gaming systems and custom custom builds.",
-      image: smm,
+      image: Gaming,
     },
     {
       id: 5,
       title: "Printer Solutions",
       category: "DEVELOPMENT",
       description: "All types of printers and printing solutions for your needs.",
-      image: appdev,
+      image: Printer,
     },
     {
       id: 6,
       title: "Software Licenses",
       category: "DEVELOPMENT",
       description: "Legitmate software licenses and licensing support.",
-      image: appdev,
+      image: SoftwareLicensesPic,
     },
     {
       id: 7,
       title: "Refurbished Systems",
       category: "DEVELOPMENT",
       description: "Quality refurbished laptops and system at affordable prices.",
-      image: appdev,
+      image: RefurbishedSystems,
     },
     {
       id: 8,
       title: "UPS and Stabilizers",
       category: "DEVELOPMENT",
       description: "Power backup and voltage stabilization solutions.",
-      image: appdev,
+      image: UPSandStabilizers,
     },
     {
       id: 9,
       title: "Network Solutions",
       category: "DEVELOPMENT",
       description: "Complete networking infrastructure and solutions.",
-      image: appdev,
+      image: NetworkSolutions,
     },
     {
       id: 10,
       title: "Antivirus Solutions",
       category: "DEVELOPMENT",
       description: "Advanced antivirus and cybersecurity protection.",
-      image: appdev,
+      image: AntivirusSolutions,
     },
     {
       id: 11,
