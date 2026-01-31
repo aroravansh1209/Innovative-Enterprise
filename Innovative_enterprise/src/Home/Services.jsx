@@ -9,11 +9,11 @@ import Gaming from '../assets/gamingsetup.png'
 import Printer from '../assets/PrinterSolution.png'
 import SoftwareLicensesPic from '../assets/SoftwareLicenses.png'
 import RefurbishedSystems from '../assets/RefurbishedSystem.png'
-import UPSandStabilizers from '../assets/RefurbishedSystem.png'
-import SoftwareLicenses from '../assets/RefurbishedSystem.png'
-import NetworkSolutions from '../assets/RefurbishedSystem.png'
-import AntivirusSolutions from '../assets/RefurbishedSystem.png'
-import appdev from '../assets/RefurbishedSystem.png'
+import UPSandStabilizers from '../assets/UPSStabilizers.png'
+import NetworkSolutions from '../assets/Hero.jpeg'
+import AntivirusSolutions from '../assets/Hero.jpeg'
+import ComputerPreipherals from '../assets/Hero.jpeg'
+import appdev from '../assets/Hero.jpeg'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -120,7 +120,7 @@ export default function BusinessServices() {
       title: "Computer Preipherals",
       category: "DEVELOPMENT",
       description: "Keybords, mice, monitors and other PC peripherals.",
-      image: appdev,
+      image: ComputerPreipherals,
     },
     {
       id: 12,
