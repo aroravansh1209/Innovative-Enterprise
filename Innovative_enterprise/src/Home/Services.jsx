@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import LaptopSupplier from '../assets/Laptop&DesktopSupplier.png'
 import Security from '../assets/Securityservices.png'
-import seo from '../assets/Hero.jpeg'
+import Corporate from '../assets/CorporateTelecom.png'
 import appdev from '../assets/Hero.jpeg'
 import smm from '../assets/Hero.jpeg'
 
@@ -57,7 +57,7 @@ export default function BusinessServices() {
       title: "Corporate Telecome",
       category: "MARKETING",
       description: "Professional telecom solutions tailored for enterprises.",
-      image: seo,
+      image: Corporate,
     },
     {
       id: 4,
