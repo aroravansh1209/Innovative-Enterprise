@@ -153,6 +153,34 @@ export default function BusinessServices() {
       description: "Enterprise-grade cybersecurity and threat protection.",
       image: Cybersecurity,
     },
+    {
+      id: 16,
+      title: "Website Development",
+      category: "DEVELOPMENT",
+      description: "Enterprise-grade cybersecurity and threat protection.",
+      image: Cybersecurity,
+    },
+    {
+      id: 17,
+      title: "App Development",
+      category: "DEVELOPMENT",
+      description: "Enterprise-grade cybersecurity and threat protection.",
+      image: Cybersecurity,
+    },
+    {
+      id: 18,
+      title: "Social Media Management",
+      category: "DEVELOPMENT",
+      description: "Enterprise-grade cybersecurity and threat protection.",
+      image: Cybersecurity,
+    },
+    {
+      id: 19,
+      title: "SEO",
+      category: "DEVELOPMENT",
+      description: "Enterprise-grade cybersecurity and threat protection.",
+      image: Cybersecurity,
+    },
   ]
 
   const nextSlide = () => {

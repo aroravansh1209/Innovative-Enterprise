@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import CreativeApproachImg from "../assets/Hero.jpeg";
+import CreativeApproachImg from "../assets/MainBanner.png";
 
 export default function CreativeApproach() {
   const progressRef = useRef(null);
