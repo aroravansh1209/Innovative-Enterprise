@@ -17,7 +17,7 @@ import InternetLeasedLines from '../assets/LeaseLine.png'
 import MultiScreenSetup from '../assets/Multiscreensetup.png'
 import CCTVSurveillance from '../assets/CCTVSurveillance.png'
 import Cybersecurity from '../assets/Cybersecurity.png'
-import Webdev from '../assets/WebDev.png'
+import WebDev from '../assets/WebDev.png'
 
 export default function BusinessServices() {
   const [currentSlide, setCurrentSlide] = useState(0)
