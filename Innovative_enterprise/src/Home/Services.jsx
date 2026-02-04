@@ -2,13 +2,13 @@
 
 import { useState, useEffect, useRef } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
-import LaptopSupplier from '../assets/Laptop&DesktopSupplier.png'
+import LaptopSupplier from '../assets/Laptop&DesktopSupplier.jpeg'
 import Security from '../assets/Securityservices.png'
 import Corporate from '../assets/CorporateTelecom.png'
 import Gaming from '../assets/gamingsetup.png'
 import Printer from '../assets/PrinterSolution.png'
 import SoftwareLicensesPic from '../assets/SoftwareLicenses.png'
-import RefurbishedSystems from '../assets/RefurbishedSystem.png'
+import RefurbishedSystems from '../assets/RefurbishedSystem.jpeg'
 import UPSandStabilizers from '../assets/UPSStabilizers.png'
 import NetworkSolutions from '../assets/NetworkSolution.png'
 import AntivirusSolutions from '../assets/AntivirusSolution.png'
