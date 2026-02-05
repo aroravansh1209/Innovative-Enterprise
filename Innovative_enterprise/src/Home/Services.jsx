@@ -244,7 +244,7 @@ export default function BusinessServices() {
           ))}
         </div>
 
-        <div className="flex md:hidden items-center justify-center gap-4 mt-8">
+        {/* <div className="flex md:hidden items-center justify-center gap-4 mt-8">
           <button
             onClick={prevSlide}
             className="w-10 h-10 rounded-full border border-gray-300 bg-white hover:bg-gray-50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-md active:scale-95"
@@ -259,7 +259,7 @@ export default function BusinessServices() {
           >
             <ArrowRight className="h-4 w-4" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )
