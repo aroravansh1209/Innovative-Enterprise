@@ -59,13 +59,13 @@ export default function BusinessServices() {
       description: "Wide range of laptops and desktop computers for personal and business use.",
       image: LaptopSupplier,
     },
-    {
-      id: 2,
-      title: "Security Services",
-      category: "DESIGN",
-      description: "Comprehensive security solutions for your computing infrastructure.",
-      image: Security,
-    },
+    // {
+    //   id: 2,
+    //   title: "Security Services",
+    //   category: "DESIGN",
+    //   description: "Comprehensive security solutions for your computing infrastructure.",
+    //   image: Security,
+    // },
     {
       id: 3,
       title: "Corporate Telecome",
