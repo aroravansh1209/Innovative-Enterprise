@@ -77,10 +77,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
             <p>&copy; 2025 Innovative Enterprise. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-red-600 transition-colors duration-300">
+              <a className="hover:text-red-600 transition-colors duration-300">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-red-600 transition-colors duration-300">
+              <a className="hover:text-red-600 transition-colors duration-300">
                 Terms of Service
               </a>
             </div>
