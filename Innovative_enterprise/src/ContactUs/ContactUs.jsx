@@ -29,7 +29,7 @@ export default function ContactUs() {
     const whatsappNumber = "919725028173" // your WhatsApp number
 
     const message = `
-New Contact Form Message 🚀
+New Enquiry 🚀
 
 👤 Name: ${formData.name}
 📧 Email: ${formData.email}
